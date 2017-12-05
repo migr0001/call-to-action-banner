@@ -14,7 +14,8 @@ body {
 }
 
 .banner {
-  text-align: left;
+  display: block;
+  position: relative;
 }
 
 .img-flex {
@@ -25,14 +26,14 @@ body {
 .logo {
   float: left;
   margin-right: 2em;
-  padding-bottom: 4em;
+  padding-bottom: 100%;
   width: 30%;
 }
 
 .card-head {
-  float: right;
-  position: relative;
-  bottom: 20em;
+  position: absolute;
+  left: 25%;
+  top: 30%;
 }
 
 h2 {
@@ -44,13 +45,8 @@ h2 {
 
 p {
   font-size: 1.5rem;
-  padding-bottom: .5rem;
   line-height: 1.5em;
   margin: 0;
-}
-
-.btn {
-  margin-top: 2em;
 }
 
 .btn-big {
@@ -62,6 +58,10 @@ p {
   color: white;
 }
 
+.btn {
+  margin-top: 2em;
+}
+
 .btn:hover {
-  color: grey;
+  background-color: grey;
 }
