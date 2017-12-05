@@ -1,43 +1,67 @@
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  max-height: 500px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.banner {
+  text-align: left;
+}
+
 .img-flex {
   width: 100%;
+  display: block;
 }
 
 .logo {
   float: left;
+  margin-right: 2em;
+  padding-bottom: 4em;
+  width: 30%;
 }
 
-.card-title {
-  font-family: 'Roboto Condensed', sans-serif;
+.card-head {
+  float: right;
+  position: relative;
+  bottom: 20em;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 3rem;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.card-body {
+p {
   font-size: 1.5rem;
   padding-bottom: .5rem;
   line-height: 1.5em;
+  margin: 0;
+}
+
+.btn {
+  margin-top: 2em;
 }
 
 .btn-big {
   font-size: 1.5rem;
   text-decoration: none;
-  padding: .6em .75em .6em;
+  padding: .6em .75em;
   border-radius: 8px;
   background-color: black;
   color: white;
 }
 
-.card-head {
-  float: left;
-  margin-left: 2em;
+.btn:hover {
+  color: grey;
 }
